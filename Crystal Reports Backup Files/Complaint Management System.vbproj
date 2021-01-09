@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC9042CC-C6C1-4273-9A45-05E354D75C1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Complaint_Management_System.frmMain</StartupObject>
+    <RootNamespace>Complaint_Management_System</RootNamespace>
+    <AssemblyName>Complaint Management System</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Complaint Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Complaint Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmRouteSlip_Add.Designer.vb">
+      <DependentUpon>frmRouteSlip_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRouteSlip_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmComplaint_Entry.Designer.vb">
+      <DependentUpon>frmComplaint_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmComplaint_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmComplaint_View.Designer.vb">
+      <DependentUpon>frmComplaint_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmComplaint_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepartments_View.Designer.vb">
+      <DependentUpon>frmDepartments_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepartments_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepartment_Entry.Designer.vb">
+      <DependentUpon>frmDepartment_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepartment_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDesignation_Entry.Designer.vb">
+      <DependentUpon>frmDesignation_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDesignation_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDesignation_View.Designer.vb">
+      <DependentUpon>frmDesignation_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDesignation_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNatureOfComplaint_Entry.Designer.vb">
+      <DependentUpon>frmNatureOfComplaint_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNatureOfComplaint_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNatureOfComplaint_View.Designer.vb">
+      <DependentUpon>frmNatureOfComplaint_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNatureOfComplaint_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRoutingSlip_Entry.Designer.vb">
+      <DependentUpon>frmRoutingSlip_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRoutingSlip_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSubCompDesk.Designer.vb">
+      <DependentUpon>frmSubCompDesk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSubCompDesk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserAccounts_Entry.Designer.vb">
+      <DependentUpon>frmUserAccounts_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserAccounts_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserAccounts_View.Designer.vb">
+      <DependentUpon>frmUserAccounts_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUserAccounts_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Connection.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\Crystal Report\crptRouteSlip.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crptRouteSlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Form Viewer\frmvwRouteSlip.Designer.vb">
+      <DependentUpon>frmvwRouteSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form Viewer\frmvwRouteSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmComplaint_Entry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmComplaint_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmComplaint_View.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmComplaint_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepartments_View.resx">
+      <DependentUpon>frmDepartments_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepartment_Entry.resx">
+      <DependentUpon>frmDepartment_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDesignation_Entry.resx">
+      <DependentUpon>frmDesignation_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDesignation_View.resx">
+      <DependentUpon>frmDesignation_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNatureOfComplaint_Entry.resx">
+      <DependentUpon>frmNatureOfComplaint_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNatureOfComplaint_View.resx">
+      <DependentUpon>frmNatureOfComplaint_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRouteSlip_Add.resx">
+      <DependentUpon>frmRouteSlip_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRoutingSlip_Entry.resx">
+      <DependentUpon>frmRoutingSlip_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSubCompDesk.resx">
+      <DependentUpon>frmSubCompDesk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserAccounts_Entry.resx">
+      <DependentUpon>frmUserAccounts_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserAccounts_View.resx">
+      <DependentUpon>frmUserAccounts_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Report\crptRouteSlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crptRouteSlip.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form Viewer\frmvwRouteSlip.resx">
+      <DependentUpon>frmvwRouteSlip.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

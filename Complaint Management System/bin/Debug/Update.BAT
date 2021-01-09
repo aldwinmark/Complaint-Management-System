@@ -1,0 +1,1 @@
+xcopy s:\hcmtrr.dbf "D:\Complaint Management System\Complaint Management System\bin\Debug\" /y /c

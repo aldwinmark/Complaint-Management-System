@@ -1,0 +1,11 @@
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint_Management_System.frmComplaint_Entry.resources
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint_Management_System.Resources.resources
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint Management System.vbproj.GenerateResource.Cache
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\bin\Debug\Complaint Management System.exe
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\bin\Debug\Complaint Management System.pdb
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\bin\Debug\Complaint Management System.xml
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint Management System.exe
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint Management System.xml
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint Management System.pdb
+C:\Users\Silver\Desktop\Complaint Management System\Complaint Management System\obj\Debug\Complaint_Management_System.frmComplaint_View.resources
